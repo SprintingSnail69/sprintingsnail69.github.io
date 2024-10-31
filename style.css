@@ -6,3 +6,11 @@ body {
     font-family: Inter;
     src: url(fonts/Inter.ttf);
 }
+
+.heading {
+    margin-left: 20px;
+}
+
+.heading:hover {
+    scale: 1.1;
+}
