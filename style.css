@@ -17,11 +17,14 @@ body {
 
 .button {
     background-color:rgb(95, 137, 222);
-    margin-left: auto;
+    margin-left: 30px;
+    color: white;
+    border-radius: 20px;
 }
 
 .button:hover {
     scale: 1.1;
+    margin-left: 30px;
     transition: 0.2s;
     margin-left: auto;
 }
