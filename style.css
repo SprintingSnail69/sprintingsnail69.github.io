@@ -141,3 +141,7 @@ header {
         padding: 12px 25px;
     }
 }
+
+.project-container {
+    background-color: rgb(98, 177, 255);
+}
