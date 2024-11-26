@@ -143,5 +143,7 @@ header {
 }
 
 .project-container {
-    background-color: rgb(98, 177, 255);
+    background-color: rgb(23, 86, 148);
+    border-radius: 10px;
+    size: 110%;
 }
