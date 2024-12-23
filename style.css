@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', Arial;
-    background: linear-gradient(135deg, #121212, #1e90ff);
+    background: linear-gradient(135deg, #1e90ff, #121212);
     color: #EAEAEA;
     margin: 0;
     padding: 0;
@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 
 .main-container {
@@ -57,41 +58,37 @@ header {
 }
 
 .project-links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+    display: flex;
+    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .project-container {
     text-align: center;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .project-button {
     background-color: #1E90FF;
     color: white;
-    padding: 20px 50px;
+    padding: 12px 35px;
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: bold;
     border-radius: 8px;
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
     transition: all 0.3s ease;
     display: inline-block;
     position: relative;
     overflow: hidden;
+    margin-top: 5px;
 }
 
 .project-button:hover {
     background-color: dodgerblue;
-    margin-top: 5px;
-    transform: scale(1.1);
-    margin-left: 10px;
-    margin-right: 10px;
+    transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 0 20px #1e90ff;
     text-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff;
 }
@@ -102,7 +99,6 @@ header {
     gap: 10px;
     margin-top: 10px;
     flex-wrap: wrap;
-    margin-bottom: 5px;
 }
 
 .tag {
@@ -112,13 +108,11 @@ header {
     border-radius: 20px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
-    margin-bottom: 5px;
 }
 
 .tag:hover {
     background-color: #1E90FF;
     color: white;
-    margin-bottom: 5px;
 }
 
 @media (max-width: 600px) {
@@ -136,8 +130,12 @@ header {
     }
 }
 
-.project-container {
-    background-color: rgb(16, 52, 105);
-    border-radius: 10px;
-    size: 110%;
+body {
+    background: linear-gradient(135deg, #1e90ff, #121212);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.project-links {
+    margin-bottom: 60px;
 }
