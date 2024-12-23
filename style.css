@@ -57,10 +57,11 @@ header {
 }
 
 .project-links {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
     gap: 30px;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .project-container {
@@ -93,25 +94,6 @@ header {
     margin-right: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 0 20px #1e90ff;
     text-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff;
-}
-
-.project-button .ripple {
-    position: absolute;
-    border-radius: 50%;
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background: rgba(255, 255, 255, 0.6);
-    transform: scale(0);
-    animation: ripple-animation 0.6s linear;
-    pointer-events: none;
-}
-
-@keyframes ripple-animation {
-    to {
-        transform: scale(4);
-        opacity: 0;
-    }
 }
 
 .tags {
@@ -155,7 +137,7 @@ header {
 }
 
 .project-container {
-    background-color:rgb(16, 52, 105);
+    background-color: rgb(16, 52, 105);
     border-radius: 10px;
     size: 110%;
 }
